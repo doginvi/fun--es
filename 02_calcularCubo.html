@@ -5,15 +5,19 @@
     Desenvolva um programa que contenha uma função que calcule o cubo desse número. Apresente o resultado para o usuário.
     */
 
-    //Entrada
-
-    let numInteiro = Number(prompt(`Informe um número inteiro:`));
 
     //Processamento
 
-    function cubo(numInteiro){
+    function cubo(num){ // Aqui eu estou declarando a função, para que possamos obter o cubo do número
+        return num * num * num; // Esta é uma das formas que podemos obter o cubo.
     }
+
+    //Entrada
+
+    let NumInteiro = Number(prompt(`Informe um número inteiro:`));
+    let resultado = cubo(NumInteiro);
 
     //Saída
 
+    alert(resultado);
 </script>

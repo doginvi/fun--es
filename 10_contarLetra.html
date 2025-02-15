@@ -7,10 +7,21 @@
 
     //Entrada
 
+    let userFrase = prompt("Digite uma frase:").toLowerCase();
+    let userLetra = prompt("Digite uma letra que está na frase:").toLowerCase();
 
     //Processamento
 
+    function contar(frase, letra){
+        let ArrayFrase = Array.from(userFrase);
+        let quantidade = ArrayFrase.filter(letras => letra.includes(letras));
+        return quantidade.length;
+    }
+
 
     //Saída
+
+    let resultado = contar(userFrase, userLetra);
+    alert(resultado);
 
 </script>

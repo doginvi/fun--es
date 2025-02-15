@@ -8,10 +8,19 @@
 
     //Entrada
 
+    let user = prompt("Informe uma palavra:").toLowerCase();
 
     //Processamento
 
+    function quantidade(palavra){
+        let arrayPalavra = Array.from(palavra);
+        let quantidade = arrayPalavra.filter(letra => ['a', 'e', 'i', 'o', 'u'].includes(letra));
+        return quantidade.length;
+    }
 
     //Saída
+
+    let resultado = quantidade(user);
+    alert(resultado);
 
 </script>

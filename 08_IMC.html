@@ -7,10 +7,18 @@
 
     //Entrada
 
+    let userPeso = Number(prompt("Informe um peso:"));
+    let userAltura = Number(prompt("Informe uma altura:"));
 
     //Processamento
 
+    function imc(peso, altura){
+        return peso / (altura * altura);
+    }
 
     //Saída
+
+    let resultado = imc(userPeso, userAltura);
+    alert(resultado.toFixed(2));
 
 </script>

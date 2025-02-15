@@ -9,10 +9,24 @@
 
     //Entrada
 
+    let userRaio = Number(prompt("Qual o valor do raio?"));
 
     //Processamento
 
+    function area(raio){
+        return Math.PI * (raio * raio);
+    }
+
+    function perimetro(raio){
+        return 2 * Math.PI * raio;
+    }
 
     //Saída
+
+    let resultadoArea = area(userRaio);
+    let resultadoPerimetro = perimetro(userRaio);
+
+    alert(`A área do círculo é igual à: ${resultadoArea}`);
+    alert(`O perímetro do círculo é igual à: ${resultadoPerimetro}`);
 
 </script>

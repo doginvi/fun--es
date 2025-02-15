@@ -13,9 +13,9 @@
     //Processamento
 
     function verificar(numeroPrimo){
-        for(contador = 0; contador <= numeroPrimo; contador++){
-            if(numeroPrimo % contador === 1){
-                verificacao++;
+        for(contador = 0; contador <= numeroPrimo; contador+=1){
+            if(numeroPrimo % contador == 0){
+                verificacao+=1;
             }
         }
         return verificacao;

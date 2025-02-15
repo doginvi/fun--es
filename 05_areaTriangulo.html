@@ -7,10 +7,18 @@
 
     //Entrada
 
+    let userBase = Number(prompt("Qual o valor da base?"));
+    let userAltura = Number(prompt("Qual o valor da altura?"));
 
     //Processamento
 
+    function area(base, altura){
+        return (base * altura) / 2;
+    }
 
     //Saída
+
+    let resultado = area(userBase, userAltura);
+    alert(resultado);
 
 </script>

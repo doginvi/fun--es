@@ -7,10 +7,18 @@
 
     //Entrada
 
+    let user = Number(prompt("Informe uma temperatura em Fahrenheit para a conversão:"));
 
     //Processamento
 
+    function conversao(Fahrenheit){
+        return (Fahrenheit - 32) * 5 / 9;
+    }
 
     //Saída
+
+    let resultado = conversao(user);
+
+    alert(resultado);
 
 </script>

@@ -7,10 +7,18 @@
 
     //Entrada
 
+    let user = Number(prompt(`Qual a temperatura em graus Celsius?`)); 
 
     //Processamento
 
+    function temperatura(graus){
+        return (9 * graus + 160) / 5;
+    }
+
+    let resultado = temperatura(user);
 
     //Saída
+
+    alert(resultado);
 
 </script>
